@@ -1,0 +1,9 @@
+1. Create Directory Structure
+2. Create a npm project and install all dependencies
+ - dependencies
+       - express
+       - ejs express-ejs-layouts
+ - dev dependencies
+       - nodemon
+3. Create express server  - Create a server.js file
+4. Create home page using html css (include tailwind css)
