@@ -8,10 +8,13 @@ app.get("/", function (req, res) {
     res.render("home");
 });
 
+
+// assets
+app.use(express.static('public'));
 // set template engine
 app.use(expresslayout);
 app.set('views', path.join(__dirname, '/resources/views'));
 app.set('view engine', 'ejs');
 app.listen(PORT, function () {
-    console.log(' Started on port ${PORT} ');
+    console.log(' Started on port 3000 ');
 });
