@@ -1,0 +1,16 @@
+t=0:0.001:1;
+xt=10*sin(2*pi*10*t);
+subplot(2,1,1);
+plot(t,xt);
+title('Original');
+xlabel('time');
+ylabel('Signal');
+fs=60;
+T=1/fs;
+n=0:T:1;
+yt=10*sin(2*pi*10*n);
+subplot(2,1,2);
+stem(n,yt);
+title('Sampled');
+xlabel('time');
+ylabel('sampled');

@@ -1,58 +1,84 @@
 @import "./variables";
-body{
-    font-family: 'Lato',sans-serif;
-    -webkit-font-smoothing:antialiased;
-    color:$dark;
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
 }
-nav li:last-child a{
+
+nav li:last-child a {
     background: $primary;
-    &:hover{
-        background-color:$primary-hover;
-        }
+
+    &:hover {
+        background-color: $primary-hover;
+    }
 }
 
 nav li a {
     transition: $smooth;
-    &:hover{
-    color:$primary;
+
+    &:hover {
+        color: $primary;
     }
 }
-section.hero{
+
+section.hero {
     background-color: $secondary;
 }
-.size{
+
+.size {
     background: $secondary;
 }
-.add-to-cart{
+
+.add-to-cart {
     border: 2px solid $primary;
     color: $primary;
     transition: $smooth;
-    &:hover{
+
+    &:hover {
         background: $primary;
         border-color: $pure;
         color: $pure;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
-.btn-primary{
+
+.btn-primary {
     background: $primary;
     transition: $smooth;
-    &:hover{
-        background:$primary-hover;
+
+    &:hover {
+        background: $primary-hover;
     }
 }
-section.cart{
+
+section.cart {
     background: $secondary;
-    .amount{
-        color:$primary;
+
+    .amount {
+        color: $primary;
     }
 }
-section.login{
+
+section.login {
     background: $secondary;
     min-height: calc(100vh - 350px);
-    a{
-        color:$primary;
-        &:hover{
-            color:$primary-hover;
+
+    a {
+        color: $primary;
+
+        &:hover {
+            color: $primary-hover;
         }
     }
+}
+
+.noty-theme-mint {
+    border-radius: 50px !important;
+    padding-left: 8px !important;
 }

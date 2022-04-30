@@ -11,3 +11,19 @@
 6. Install laravel mix
    - setup js and scss
 7. Install tailwind css
+8. Create home page 
+9. Create cart page
+   - order summary section
+   - empty cart section
+10. move routes to  routes file
+11. Create dedicated controllers
+12. Add to cart functionality
+  -Fetch all pizzas from db and show on home page
+  -create menu model and put dummy data
+       - Connect to mongodb
+       - use connect-mongo for session store
+          - dependencies
+               -mongoose,express-session,connect-mongo,dotenv
+      - axios to send ajax request
+      -install notifictaion library noty
+13. build register crud
